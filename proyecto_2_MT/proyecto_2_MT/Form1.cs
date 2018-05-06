@@ -16,5 +16,10 @@ namespace proyecto_2_MT
         {
             InitializeComponent();
         }
+
+        private void tabPage1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
