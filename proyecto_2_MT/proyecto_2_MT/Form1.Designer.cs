@@ -639,6 +639,7 @@
             this.play5.TabIndex = 16;
             this.play5.TabStop = false;
             this.play5.Visible = false;
+            this.play5.Click += new System.EventHandler(this.play5_Click);
             // 
             // estado5
             // 
@@ -681,6 +682,7 @@
             this.nuevacinta5.Text = "nueva cinta";
             this.nuevacinta5.UseVisualStyleBackColor = false;
             this.nuevacinta5.Visible = false;
+            this.nuevacinta5.Click += new System.EventHandler(this.nuevacinta5_Click);
             // 
             // escribir5
             // 
@@ -693,6 +695,7 @@
             this.escribir5.TabIndex = 11;
             this.escribir5.Text = "Escribir";
             this.escribir5.UseVisualStyleBackColor = false;
+            this.escribir5.Click += new System.EventHandler(this.escribir5_Click);
             // 
             // dataGridView5
             // 

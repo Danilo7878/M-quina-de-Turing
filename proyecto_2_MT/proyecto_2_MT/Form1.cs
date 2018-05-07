@@ -1615,5 +1615,326 @@ namespace proyecto_2_MT
             dataGridView4.Columns.Clear();
             textBox4.Text = "";
         }
+
+        private void escribir5_Click(object sender, EventArgs e)
+        {
+            string cadena = textBox5.Text;
+            if (cadena != "")
+            {
+                iniciar5.Visible = true;
+                estadoactual5.Visible = true;
+                play5.Enabled = true;
+                play5.Visible = true;
+                for (int i = 0; i <= cadena.Length; i++)
+                {
+                    dataGridView5.Columns.Add("", "");
+                }
+                dataGridView5.Rows.Add();
+
+                for (int i = 0; i < cadena.Length; i++)
+                {
+                    dataGridView5[i, 1].Value = cadena[i];
+                }
+                dataGridView5[cadena.Length, 1].Value = "ß";
+                dataGridView5[0, 0].Value = "⌛";
+                dataGridView5.ClearSelection();
+                escribir5.Enabled = false;
+                escribir5.Visible = false;
+                nuevacinta5.Enabled = true;
+            }
+        }
+
+        private void play5_Click(object sender, EventArgs e)
+        {
+            play5.Visible = false;
+            play5.Enabled = false;
+            iniciar5.Visible = false;
+            estado5.Text = "q0";
+            bool active = true;
+            bool accept = false;
+            int cabezal = 0;
+            while (active)
+            {
+                this.Refresh();
+                System.Threading.Thread.Sleep(800);
+                if (cabezal >= 0)
+                {
+                    switch (estado5.Text)
+                    {
+                        case "q0":
+                            switch (dataGridView5[cabezal, 1].Value.ToString())
+                            {
+                                case "1":
+                                    dataGridView5[cabezal, 1].Value = "X";
+                                    cabezal++;
+                                    estado5.Text = "q1";
+                                    break;
+
+                                default:
+                                    active = false;
+                                    break;
+                            }
+                            break;
+
+                        case "q1":
+                            switch (dataGridView5[cabezal, 1].Value.ToString())
+                            {
+                                case "1":
+                                    cabezal++;
+                                    break;
+
+                                case "-":
+                                    cabezal++;
+                                    estado5.Text = "q2";
+                                    break;
+
+                                default:
+                                    active = false;
+                                    break;
+                            }
+                            break;
+
+                        case "q2":
+                            switch (dataGridView5[cabezal, 1].Value.ToString())
+                            {
+                                case "1":
+                                    dataGridView5[cabezal, 1].Value = "Y";
+                                    cabezal--;
+                                    estado5.Text = "q3";
+                                    break;
+
+                                default:
+                                    active = false;
+                                    break;
+                            }
+                            break;
+
+                        case "q3":
+                            switch (dataGridView5[cabezal, 1].Value.ToString())
+                            {
+                                case "1":
+                                    cabezal--;
+                                    break;
+
+                                case "-":
+                                    cabezal--;
+                                    break;
+
+                                case "X":
+                                    dataGridView5[cabezal, 1].Value = "1";
+                                    cabezal++;
+                                    estado5.Text = "q4";
+                                    break;
+
+                                default:
+                                    active = false;
+                                    break;
+                            }
+                            break;
+
+                        case "q4":
+                            switch (dataGridView5[cabezal, 1].Value.ToString())
+                            {
+                                case "1":
+                                    dataGridView5[cabezal, 1].Value = "X";
+                                    cabezal++;
+                                    estado5.Text = "q5";
+                                    break;
+
+                                default:
+                                    active = false;
+                                    break;
+                            }
+                            break;
+
+                        case "q5":
+                            switch (dataGridView5[cabezal, 1].Value.ToString())
+                            {
+                                case "1":
+                                    cabezal++;
+                                    break;
+
+                                case "-":
+                                    cabezal++;
+                                    estado5.Text = "q6";
+                                    break;
+
+                                default:
+                                    active = false;
+                                    break;
+                            }
+                            break;
+
+                        case "q6":
+                            switch (dataGridView5[cabezal, 1].Value.ToString())
+                            {
+                                case "1":
+                                    cabezal++;
+                                    break;
+
+                                case "Y":
+                                    dataGridView5[cabezal, 1].Value = "1";
+                                    cabezal++;
+                                    estado5.Text = "q7";
+                                    break;
+
+                                default:
+                                    active = false;
+                                    break;
+                            }
+                            break;
+
+                        case "q7":
+                            switch (dataGridView5[cabezal, 1].Value.ToString())
+                            {
+                                case "1":
+                                    dataGridView5[cabezal, 1].Value = "Y";
+                                    cabezal--;
+                                    estado5.Text = "q3";
+                                    break;
+
+                                case "=":
+                                    cabezal++;
+                                    estado5.Text = "q8";
+                                    break;
+
+                                default:
+                                    active = false;
+                                    break;
+                            }
+                            break;
+
+                        case "q8":
+                            switch (dataGridView5[cabezal, 1].Value.ToString())
+                            {
+                                case "ß":
+                                    dataGridView5[cabezal, 1].Value = "1";
+                                    dataGridView5.Columns.Add("", "");
+                                    dataGridView5[cabezal + 1, 1].Value = "ß";
+                                    cabezal--;
+                                    estado5.Text = "q9";
+                                    break;
+
+                                default:
+                                    active = false;
+                                    break;
+                            }
+                            break;
+
+                        case "q9":
+                            switch (dataGridView5[cabezal, 1].Value.ToString())
+                            {
+                                case "1":
+                                    cabezal--;
+                                    break;
+
+                                case "-":
+                                    cabezal--;
+                                    break;
+
+                                case "=":
+                                    cabezal--;
+                                    break;
+
+                                case "X":
+                                    dataGridView5[cabezal, 1].Value = "1";
+                                    cabezal++;
+                                    estado5.Text = "q10";
+                                    break;
+
+                                default:
+                                    active = false;
+                                    break;
+                            }
+                            break;
+
+                        case "q10":
+                            switch (dataGridView5[cabezal, 1].Value.ToString())
+                            {
+                                case "1":
+                                    dataGridView5[cabezal, 1].Value = "X";
+                                    cabezal++;
+                                    estado5.Text = "q11";
+                                    break;
+
+                                case "-":
+                                    cabezal++;
+                                    estado5.Text = "q13";
+                                    break;
+
+                                default:
+                                    active = false;
+                                    break;
+                            }
+                            break;
+
+                        case "q11":
+                            switch (dataGridView5[cabezal, 1].Value.ToString())
+                            {
+                                case "1":
+                                    cabezal++;
+                                    break;
+
+                                case "-":
+                                    cabezal++;
+                                    break;
+
+                                case "=":
+                                    cabezal++;
+                                    break;
+
+                                case "ß":
+                                    dataGridView5[cabezal, 1].Value = "1";
+                                    dataGridView5.Columns.Add("", "");
+                                    dataGridView5[cabezal + 1, 1].Value = "ß";
+                                    cabezal--;
+                                    estado5.Text = "q9";
+                                    break;
+
+                                default:
+                                    active = false;
+                                    break;
+                            }
+                            break;
+
+                        case "q13":
+                            accept = true;
+                            active = false;
+                            break;
+                    }
+                }
+                else
+                {
+                    active = false;
+                }
+                vaciarFilaCabeza5();
+                dataGridView5[cabezal, 0].Value = "⌛";
+            }
+
+            if (accept)
+            {
+                MessageBox.Show("cadena aceptada. SE REALIZÓ LA OPERACIÓN");
+            }
+            else
+            {
+                MessageBox.Show("cadena no aceptada. LA MÁQUINA SE DETUVO");
+            }
+
+            nuevacinta5.Visible = true;
+            nuevacinta5.Enabled = true;
+        }
+
+        private void nuevacinta5_Click(object sender, EventArgs e)
+        {
+            nuevacinta5.Enabled = false;
+            nuevacinta5.Visible = false;
+            escribir5.Enabled = true;
+            escribir5.Visible = true;
+            estadoactual5.Visible = false;
+            estado5.Text = "";
+            dataGridView5.Rows.Clear();
+            dataGridView5.Columns.Clear();
+            textBox5.Text = "";
+        }
     }
 }
