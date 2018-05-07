@@ -1859,7 +1859,7 @@ namespace proyecto_2_MT
 
                                 case "-":
                                     cabezal++;
-                                    estado5.Text = "q13";
+                                    estado5.Text = "q12";
                                     break;
 
                                 default:
@@ -1897,7 +1897,7 @@ namespace proyecto_2_MT
                             }
                             break;
 
-                        case "q13":
+                        case "q12":
                             accept = true;
                             active = false;
                             break;
