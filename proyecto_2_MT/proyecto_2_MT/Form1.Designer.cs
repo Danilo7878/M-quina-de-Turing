@@ -31,19 +31,16 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.tabPage4 = new System.Windows.Forms.TabPage();
-            this.tabPage5 = new System.Windows.Forms.TabPage();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.estado = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label4 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.estado = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
             this.iniciar2 = new System.Windows.Forms.Label();
             this.play2 = new System.Windows.Forms.PictureBox();
             this.estado2 = new System.Windows.Forms.Label();
@@ -53,6 +50,7 @@
             this.escribir2 = new System.Windows.Forms.Button();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.textBox2 = new System.Windows.Forms.TextBox();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
             this.iniciar3 = new System.Windows.Forms.Label();
             this.play3 = new System.Windows.Forms.PictureBox();
             this.estado3 = new System.Windows.Forms.Label();
@@ -62,6 +60,7 @@
             this.escribir3 = new System.Windows.Forms.Button();
             this.dataGridView3 = new System.Windows.Forms.DataGridView();
             this.textBox3 = new System.Windows.Forms.TextBox();
+            this.tabPage4 = new System.Windows.Forms.TabPage();
             this.iniciar4 = new System.Windows.Forms.Label();
             this.play4 = new System.Windows.Forms.PictureBox();
             this.estado4 = new System.Windows.Forms.Label();
@@ -71,6 +70,7 @@
             this.escribir4 = new System.Windows.Forms.Button();
             this.dataGridView4 = new System.Windows.Forms.DataGridView();
             this.textBox4 = new System.Windows.Forms.TextBox();
+            this.tabPage5 = new System.Windows.Forms.TabPage();
             this.iniciar5 = new System.Windows.Forms.Label();
             this.play5 = new System.Windows.Forms.PictureBox();
             this.estado5 = new System.Windows.Forms.Label();
@@ -80,20 +80,23 @@
             this.escribir5 = new System.Windows.Forms.Button();
             this.dataGridView5 = new System.Windows.Forms.DataGridView();
             this.textBox5 = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
-            this.tabPage2.SuspendLayout();
-            this.tabPage3.SuspendLayout();
-            this.tabPage4.SuspendLayout();
-            this.tabPage5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.tabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.play2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            this.tabPage3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.play3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
+            this.tabPage4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.play4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).BeginInit();
+            this.tabPage5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.play5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView5)).BeginInit();
             this.SuspendLayout();
@@ -131,88 +134,83 @@
             this.tabPage1.Text = "Palíndromo";
             this.tabPage1.Click += new System.EventHandler(this.tabPage1_Click);
             // 
-            // tabPage2
+            // label4
             // 
-            this.tabPage2.Controls.Add(this.iniciar2);
-            this.tabPage2.Controls.Add(this.play2);
-            this.tabPage2.Controls.Add(this.estado2);
-            this.tabPage2.Controls.Add(this.estadoact2);
-            this.tabPage2.Controls.Add(this.label7);
-            this.tabPage2.Controls.Add(this.nuevacinta2);
-            this.tabPage2.Controls.Add(this.escribir2);
-            this.tabPage2.Controls.Add(this.dataGridView2);
-            this.tabPage2.Controls.Add(this.textBox2);
-            this.tabPage2.Location = new System.Drawing.Point(4, 22);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(544, 311);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "copia de patrón";
-            this.tabPage2.UseVisualStyleBackColor = true;
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(402, 59);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(42, 13);
+            this.label4.TabIndex = 8;
+            this.label4.Text = "iniciar";
+            this.label4.Visible = false;
             // 
-            // tabPage3
+            // pictureBox1
             // 
-            this.tabPage3.Controls.Add(this.iniciar3);
-            this.tabPage3.Controls.Add(this.play3);
-            this.tabPage3.Controls.Add(this.estado3);
-            this.tabPage3.Controls.Add(this.estadoactual3);
-            this.tabPage3.Controls.Add(this.label11);
-            this.tabPage3.Controls.Add(this.nuevacinta3);
-            this.tabPage3.Controls.Add(this.escribir3);
-            this.tabPage3.Controls.Add(this.dataGridView3);
-            this.tabPage3.Controls.Add(this.textBox3);
-            this.tabPage3.Location = new System.Drawing.Point(4, 22);
-            this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(544, 311);
-            this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "mult unario";
-            this.tabPage3.UseVisualStyleBackColor = true;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(400, 20);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(41, 36);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 7;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Visible = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
-            // tabPage4
+            // estado
             // 
-            this.tabPage4.Controls.Add(this.iniciar4);
-            this.tabPage4.Controls.Add(this.play4);
-            this.tabPage4.Controls.Add(this.estado4);
-            this.tabPage4.Controls.Add(this.estadoactual4);
-            this.tabPage4.Controls.Add(this.label15);
-            this.tabPage4.Controls.Add(this.nuevacinta4);
-            this.tabPage4.Controls.Add(this.escribir4);
-            this.tabPage4.Controls.Add(this.dataGridView4);
-            this.tabPage4.Controls.Add(this.textBox4);
-            this.tabPage4.Location = new System.Drawing.Point(4, 22);
-            this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage4.Size = new System.Drawing.Size(544, 311);
-            this.tabPage4.TabIndex = 3;
-            this.tabPage4.Text = "suma unario";
-            this.tabPage4.UseVisualStyleBackColor = true;
+            this.estado.AutoSize = true;
+            this.estado.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.estado.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.estado.Location = new System.Drawing.Point(51, 265);
+            this.estado.Name = "estado";
+            this.estado.Size = new System.Drawing.Size(0, 24);
+            this.estado.TabIndex = 6;
             // 
-            // tabPage5
+            // label2
             // 
-            this.tabPage5.Controls.Add(this.iniciar5);
-            this.tabPage5.Controls.Add(this.play5);
-            this.tabPage5.Controls.Add(this.estado5);
-            this.tabPage5.Controls.Add(this.estadoactual5);
-            this.tabPage5.Controls.Add(this.label19);
-            this.tabPage5.Controls.Add(this.nuevacinta5);
-            this.tabPage5.Controls.Add(this.escribir5);
-            this.tabPage5.Controls.Add(this.dataGridView5);
-            this.tabPage5.Controls.Add(this.textBox5);
-            this.tabPage5.Location = new System.Drawing.Point(4, 22);
-            this.tabPage5.Name = "tabPage5";
-            this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage5.Size = new System.Drawing.Size(544, 311);
-            this.tabPage5.TabIndex = 4;
-            this.tabPage5.Text = "resta unario";
-            this.tabPage5.UseVisualStyleBackColor = true;
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(32, 236);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(79, 13);
+            this.label2.TabIndex = 5;
+            this.label2.Text = "estado actual:";
+            this.label2.Visible = false;
             // 
-            // textBox1
+            // label1
             // 
-            this.textBox1.Location = new System.Drawing.Point(54, 28);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(162, 20);
-            this.textBox1.TabIndex = 0;
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(18, 58);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(229, 13);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "Escriba la cadena que ingresará en la cinta";
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.Tomato;
+            this.button2.Enabled = false;
+            this.button2.ForeColor = System.Drawing.SystemColors.Control;
+            this.button2.Location = new System.Drawing.Point(198, 248);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(174, 30);
+            this.button2.TabIndex = 3;
+            this.button2.Text = "nueva cinta";
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Visible = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Black;
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.button1.ForeColor = System.Drawing.SystemColors.Control;
+            this.button1.Location = new System.Drawing.Point(237, 20);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 35);
+            this.button1.TabIndex = 2;
+            this.button1.Text = "Escribir";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // dataGridView1
             // 
@@ -232,88 +230,36 @@
             this.dataGridView1.Size = new System.Drawing.Size(480, 67);
             this.dataGridView1.TabIndex = 1;
             // 
-            // button1
+            // textBox1
             // 
-            this.button1.BackColor = System.Drawing.Color.Black;
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.button1.ForeColor = System.Drawing.SystemColors.Control;
-            this.button1.Location = new System.Drawing.Point(237, 20);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 35);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "Escribir";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.textBox1.Location = new System.Drawing.Point(54, 28);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(162, 20);
+            this.textBox1.TabIndex = 0;
             // 
-            // button2
+            // tabPage2
             // 
-            this.button2.BackColor = System.Drawing.Color.Tomato;
-            this.button2.Enabled = false;
-            this.button2.ForeColor = System.Drawing.SystemColors.Control;
-            this.button2.Location = new System.Drawing.Point(198, 248);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(174, 30);
-            this.button2.TabIndex = 3;
-            this.button2.Text = "nueva cinta";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Visible = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(18, 58);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(229, 13);
-            this.label1.TabIndex = 4;
-            this.label1.Text = "Escriba la cadena que ingresará en la cinta";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(32, 236);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(79, 13);
-            this.label2.TabIndex = 5;
-            this.label2.Text = "estado actual:";
-            this.label2.Visible = false;
-            // 
-            // estado
-            // 
-            this.estado.AutoSize = true;
-            this.estado.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.estado.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.estado.Location = new System.Drawing.Point(51, 265);
-            this.estado.Name = "estado";
-            this.estado.Size = new System.Drawing.Size(0, 24);
-            this.estado.TabIndex = 6;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(400, 20);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(41, 36);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 7;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Visible = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(402, 59);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(42, 13);
-            this.label4.TabIndex = 8;
-            this.label4.Text = "iniciar";
-            this.label4.Visible = false;
+            this.tabPage2.Controls.Add(this.iniciar2);
+            this.tabPage2.Controls.Add(this.play2);
+            this.tabPage2.Controls.Add(this.estado2);
+            this.tabPage2.Controls.Add(this.estadoact2);
+            this.tabPage2.Controls.Add(this.label7);
+            this.tabPage2.Controls.Add(this.nuevacinta2);
+            this.tabPage2.Controls.Add(this.escribir2);
+            this.tabPage2.Controls.Add(this.dataGridView2);
+            this.tabPage2.Controls.Add(this.textBox2);
+            this.tabPage2.Location = new System.Drawing.Point(4, 22);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(544, 311);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "copia de patrón";
+            this.tabPage2.UseVisualStyleBackColor = true;
             // 
             // iniciar2
             // 
             this.iniciar2.AutoSize = true;
-            this.iniciar2.Location = new System.Drawing.Point(408, 60);
+            this.iniciar2.Location = new System.Drawing.Point(409, 63);
             this.iniciar2.Name = "iniciar2";
             this.iniciar2.Size = new System.Drawing.Size(42, 13);
             this.iniciar2.TabIndex = 17;
@@ -323,7 +269,7 @@
             // play2
             // 
             this.play2.Image = ((System.Drawing.Image)(resources.GetObject("play2.Image")));
-            this.play2.Location = new System.Drawing.Point(406, 21);
+            this.play2.Location = new System.Drawing.Point(407, 24);
             this.play2.Name = "play2";
             this.play2.Size = new System.Drawing.Size(41, 36);
             this.play2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -337,7 +283,7 @@
             this.estado2.AutoSize = true;
             this.estado2.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.estado2.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.estado2.Location = new System.Drawing.Point(57, 266);
+            this.estado2.Location = new System.Drawing.Point(58, 269);
             this.estado2.Name = "estado2";
             this.estado2.Size = new System.Drawing.Size(0, 24);
             this.estado2.TabIndex = 15;
@@ -345,7 +291,7 @@
             // estadoact2
             // 
             this.estadoact2.AutoSize = true;
-            this.estadoact2.Location = new System.Drawing.Point(38, 237);
+            this.estadoact2.Location = new System.Drawing.Point(39, 240);
             this.estadoact2.Name = "estadoact2";
             this.estadoact2.Size = new System.Drawing.Size(79, 13);
             this.estadoact2.TabIndex = 14;
@@ -355,7 +301,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(24, 59);
+            this.label7.Location = new System.Drawing.Point(25, 62);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(229, 13);
             this.label7.TabIndex = 13;
@@ -366,7 +312,7 @@
             this.nuevacinta2.BackColor = System.Drawing.Color.Tomato;
             this.nuevacinta2.Enabled = false;
             this.nuevacinta2.ForeColor = System.Drawing.SystemColors.Control;
-            this.nuevacinta2.Location = new System.Drawing.Point(204, 249);
+            this.nuevacinta2.Location = new System.Drawing.Point(205, 252);
             this.nuevacinta2.Name = "nuevacinta2";
             this.nuevacinta2.Size = new System.Drawing.Size(174, 30);
             this.nuevacinta2.TabIndex = 12;
@@ -380,7 +326,7 @@
             this.escribir2.BackColor = System.Drawing.Color.Black;
             this.escribir2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.escribir2.ForeColor = System.Drawing.SystemColors.Control;
-            this.escribir2.Location = new System.Drawing.Point(243, 21);
+            this.escribir2.Location = new System.Drawing.Point(244, 24);
             this.escribir2.Name = "escribir2";
             this.escribir2.Size = new System.Drawing.Size(75, 35);
             this.escribir2.TabIndex = 11;
@@ -399,7 +345,7 @@
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView2.ColumnHeadersVisible = false;
             this.dataGridView2.Enabled = false;
-            this.dataGridView2.Location = new System.Drawing.Point(41, 125);
+            this.dataGridView2.Location = new System.Drawing.Point(42, 128);
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.RowHeadersVisible = false;
             this.dataGridView2.RowHeadersWidth = 49;
@@ -408,10 +354,30 @@
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(60, 29);
+            this.textBox2.Location = new System.Drawing.Point(61, 32);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(162, 20);
             this.textBox2.TabIndex = 9;
+            // 
+            // tabPage3
+            // 
+            this.tabPage3.Controls.Add(this.label3);
+            this.tabPage3.Controls.Add(this.iniciar3);
+            this.tabPage3.Controls.Add(this.play3);
+            this.tabPage3.Controls.Add(this.estado3);
+            this.tabPage3.Controls.Add(this.estadoactual3);
+            this.tabPage3.Controls.Add(this.label11);
+            this.tabPage3.Controls.Add(this.nuevacinta3);
+            this.tabPage3.Controls.Add(this.escribir3);
+            this.tabPage3.Controls.Add(this.dataGridView3);
+            this.tabPage3.Controls.Add(this.textBox3);
+            this.tabPage3.Location = new System.Drawing.Point(4, 22);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage3.Size = new System.Drawing.Size(544, 311);
+            this.tabPage3.TabIndex = 2;
+            this.tabPage3.Text = "mult unario";
+            this.tabPage3.UseVisualStyleBackColor = true;
             // 
             // iniciar3
             // 
@@ -516,6 +482,26 @@
             this.textBox3.Size = new System.Drawing.Size(162, 20);
             this.textBox3.TabIndex = 9;
             // 
+            // tabPage4
+            // 
+            this.tabPage4.Controls.Add(this.label5);
+            this.tabPage4.Controls.Add(this.iniciar4);
+            this.tabPage4.Controls.Add(this.play4);
+            this.tabPage4.Controls.Add(this.estado4);
+            this.tabPage4.Controls.Add(this.estadoactual4);
+            this.tabPage4.Controls.Add(this.label15);
+            this.tabPage4.Controls.Add(this.nuevacinta4);
+            this.tabPage4.Controls.Add(this.escribir4);
+            this.tabPage4.Controls.Add(this.dataGridView4);
+            this.tabPage4.Controls.Add(this.textBox4);
+            this.tabPage4.Location = new System.Drawing.Point(4, 22);
+            this.tabPage4.Name = "tabPage4";
+            this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage4.Size = new System.Drawing.Size(544, 311);
+            this.tabPage4.TabIndex = 3;
+            this.tabPage4.Text = "suma unario";
+            this.tabPage4.UseVisualStyleBackColor = true;
+            // 
             // iniciar4
             // 
             this.iniciar4.AutoSize = true;
@@ -618,6 +604,26 @@
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(162, 20);
             this.textBox4.TabIndex = 9;
+            // 
+            // tabPage5
+            // 
+            this.tabPage5.Controls.Add(this.label6);
+            this.tabPage5.Controls.Add(this.iniciar5);
+            this.tabPage5.Controls.Add(this.play5);
+            this.tabPage5.Controls.Add(this.estado5);
+            this.tabPage5.Controls.Add(this.estadoactual5);
+            this.tabPage5.Controls.Add(this.label19);
+            this.tabPage5.Controls.Add(this.nuevacinta5);
+            this.tabPage5.Controls.Add(this.escribir5);
+            this.tabPage5.Controls.Add(this.dataGridView5);
+            this.tabPage5.Controls.Add(this.textBox5);
+            this.tabPage5.Location = new System.Drawing.Point(4, 22);
+            this.tabPage5.Name = "tabPage5";
+            this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage5.Size = new System.Drawing.Size(544, 311);
+            this.tabPage5.TabIndex = 4;
+            this.tabPage5.Text = "resta unario";
+            this.tabPage5.UseVisualStyleBackColor = true;
             // 
             // iniciar5
             // 
@@ -722,6 +728,33 @@
             this.textBox5.Size = new System.Drawing.Size(162, 20);
             this.textBox5.TabIndex = 9;
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(24, 72);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(139, 13);
+            this.label3.TabIndex = 18;
+            this.label3.Text = "caracter del sistema:  \"1\"";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(24, 72);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(139, 13);
+            this.label5.TabIndex = 19;
+            this.label5.Text = "caracter del sistema:  \"1\"";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(24, 72);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(139, 13);
+            this.label6.TabIndex = 19;
+            this.label6.Text = "caracter del sistema:  \"1\"";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 13F);
@@ -735,22 +768,22 @@
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
-            this.tabPage3.ResumeLayout(false);
-            this.tabPage3.PerformLayout();
-            this.tabPage4.ResumeLayout(false);
-            this.tabPage4.PerformLayout();
-            this.tabPage5.ResumeLayout(false);
-            this.tabPage5.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.play2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            this.tabPage3.ResumeLayout(false);
+            this.tabPage3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.play3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
+            this.tabPage4.ResumeLayout(false);
+            this.tabPage4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.play4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).EndInit();
+            this.tabPage5.ResumeLayout(false);
+            this.tabPage5.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.play5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView5)).EndInit();
             this.ResumeLayout(false);
@@ -810,6 +843,9 @@
         private System.Windows.Forms.Button escribir5;
         private System.Windows.Forms.DataGridView dataGridView5;
         private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label6;
     }
 }
 
