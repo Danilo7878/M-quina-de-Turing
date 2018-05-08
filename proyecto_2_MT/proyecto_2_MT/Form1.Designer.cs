@@ -51,6 +51,7 @@
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.label3 = new System.Windows.Forms.Label();
             this.iniciar3 = new System.Windows.Forms.Label();
             this.play3 = new System.Windows.Forms.PictureBox();
             this.estado3 = new System.Windows.Forms.Label();
@@ -61,6 +62,7 @@
             this.dataGridView3 = new System.Windows.Forms.DataGridView();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.label5 = new System.Windows.Forms.Label();
             this.iniciar4 = new System.Windows.Forms.Label();
             this.play4 = new System.Windows.Forms.PictureBox();
             this.estado4 = new System.Windows.Forms.Label();
@@ -71,6 +73,7 @@
             this.dataGridView4 = new System.Windows.Forms.DataGridView();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.tabPage5 = new System.Windows.Forms.TabPage();
+            this.label6 = new System.Windows.Forms.Label();
             this.iniciar5 = new System.Windows.Forms.Label();
             this.play5 = new System.Windows.Forms.PictureBox();
             this.estado5 = new System.Windows.Forms.Label();
@@ -80,9 +83,8 @@
             this.escribir5 = new System.Windows.Forms.Button();
             this.dataGridView5 = new System.Windows.Forms.DataGridView();
             this.textBox5 = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.label8 = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -379,6 +381,15 @@
             this.tabPage3.Text = "mult unario";
             this.tabPage3.UseVisualStyleBackColor = true;
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(24, 72);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(139, 13);
+            this.label3.TabIndex = 18;
+            this.label3.Text = "caracter del sistema:  \"1\"";
+            // 
             // iniciar3
             // 
             this.iniciar3.AutoSize = true;
@@ -501,6 +512,15 @@
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "suma unario";
             this.tabPage4.UseVisualStyleBackColor = true;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(24, 72);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(139, 13);
+            this.label5.TabIndex = 19;
+            this.label5.Text = "caracter del sistema:  \"1\"";
             // 
             // iniciar4
             // 
@@ -625,6 +645,15 @@
             this.tabPage5.Text = "resta unario";
             this.tabPage5.UseVisualStyleBackColor = true;
             // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(24, 72);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(139, 13);
+            this.label6.TabIndex = 19;
+            this.label6.Text = "caracter del sistema:  \"1\"";
+            // 
             // iniciar5
             // 
             this.iniciar5.AutoSize = true;
@@ -728,39 +757,40 @@
             this.textBox5.Size = new System.Drawing.Size(162, 20);
             this.textBox5.TabIndex = 9;
             // 
-            // label3
+            // comboBox1
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(24, 72);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(139, 13);
-            this.label3.TabIndex = 18;
-            this.label3.Text = "caracter del sistema:  \"1\"";
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "0,05 seg",
+            "0,2 seg",
+            "0,5 seg",
+            "0,8 seg",
+            "1,0 seg",
+            "1,5 seg"});
+            this.comboBox1.Location = new System.Drawing.Point(214, 395);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(121, 21);
+            this.comboBox1.TabIndex = 1;
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
-            // label5
+            // label8
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(24, 72);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(139, 13);
-            this.label5.TabIndex = 19;
-            this.label5.Text = "caracter del sistema:  \"1\"";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(24, 72);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(139, 13);
-            this.label6.TabIndex = 19;
-            this.label6.Text = "caracter del sistema:  \"1\"";
+            this.label8.AutoSize = true;
+            this.label8.ForeColor = System.Drawing.SystemColors.Control;
+            this.label8.Location = new System.Drawing.Point(177, 426);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(198, 13);
+            this.label8.TabIndex = 2;
+            this.label8.Text = "cambiar velocidad entre transiciones";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.ClientSize = new System.Drawing.Size(576, 400);
+            this.ClientSize = new System.Drawing.Size(573, 451);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.tabControl1);
             this.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Name = "Form1";
@@ -787,6 +817,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.play5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView5)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -846,6 +877,8 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Label label8;
     }
 }
 

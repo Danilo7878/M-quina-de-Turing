@@ -17,6 +17,8 @@ namespace proyecto_2_MT
             InitializeComponent();
         }
 
+        int tiempo = 800;
+
         private void vaciarFilaCabeza()
         {
             for (int i = 0; i < dataGridView1.ColumnCount; i++) {
@@ -108,6 +110,7 @@ namespace proyecto_2_MT
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
+            comboBox1.Enabled = false;
             pictureBox1.Visible = false;
             pictureBox1.Enabled = false;
             label4.Visible = false;
@@ -118,7 +121,7 @@ namespace proyecto_2_MT
             while (active)
             {
                 this.Refresh();
-                System.Threading.Thread.Sleep(800);
+                System.Threading.Thread.Sleep(tiempo);
                 if (cabezal >= 0)
                 {
                     switch (estado.Text)
@@ -238,16 +241,19 @@ namespace proyecto_2_MT
                                     break;
 
                                 case "X":
+                                    dataGridView1[cabezal, 1].Value = "a";
                                     cabezal++;
                                     estado.Text = "q12";
                                     break;
 
                                 case "Y":
+                                    dataGridView1[cabezal, 1].Value = "b";
                                     cabezal++;
                                     estado.Text = "q12";
                                     break;
 
                                 case "Z":
+                                    dataGridView1[cabezal, 1].Value = "c";
                                     cabezal++;
                                     estado.Text = "q12";
                                     break;
@@ -268,16 +274,19 @@ namespace proyecto_2_MT
                                     break;
 
                                 case "X":
+                                    dataGridView1[cabezal, 1].Value = "a";
                                     cabezal++;
                                     estado.Text = "q12";
                                     break;
 
                                 case "Y":
+                                    dataGridView1[cabezal, 1].Value = "b";
                                     cabezal++;
                                     estado.Text = "q12";
                                     break;
 
                                 case "Z":
+                                    dataGridView1[cabezal, 1].Value = "c";
                                     cabezal++;
                                     estado.Text = "q12";
                                     break;
@@ -298,16 +307,19 @@ namespace proyecto_2_MT
                                     break;
 
                                 case "X":
+                                    dataGridView1[cabezal, 1].Value = "a";
                                     cabezal++;
                                     estado.Text = "q12";
                                     break;
 
                                 case "Y":
+                                    dataGridView1[cabezal, 1].Value = "b";
                                     cabezal++;
                                     estado.Text = "q12";
                                     break;
 
                                 case "Z":
+                                    dataGridView1[cabezal, 1].Value = "c";
                                     cabezal++;
                                     estado.Text = "q12";
                                     break;
@@ -334,16 +346,19 @@ namespace proyecto_2_MT
                                     break;
 
                                 case "X":
+                                    dataGridView1[cabezal, 1].Value = "a";
                                     cabezal++;
                                     estado.Text = "q8";
                                     break;
 
                                 case "Y":
+                                    dataGridView1[cabezal, 1].Value = "b";
                                     cabezal++;
                                     estado.Text = "q8";
                                     break;
 
                                 case "Z":
+                                    dataGridView1[cabezal, 1].Value = "c";
                                     cabezal++;
                                     estado.Text = "q8";
                                     break;
@@ -376,16 +391,19 @@ namespace proyecto_2_MT
                                     break;
 
                                 case "X":
+                                    dataGridView1[cabezal, 1].Value = "a";
                                     cabezal--;
                                     estado.Text = "q12";
                                     break;
 
                                 case "Y":
+                                    dataGridView1[cabezal, 1].Value = "b";
                                     cabezal--;
                                     estado.Text = "q12";
                                     break;
 
                                 case "Z":
+                                    dataGridView1[cabezal, 1].Value = "c";
                                     cabezal--;
                                     estado.Text = "q12";
                                     break;
@@ -412,16 +430,19 @@ namespace proyecto_2_MT
                                     break;
 
                                 case "X":
+                                    dataGridView1[cabezal, 1].Value = "a";
                                     cabezal--;
                                     estado.Text = "q4";
                                     break;
 
                                 case "Y":
+                                    dataGridView1[cabezal, 1].Value = "b";
                                     cabezal--;
                                     estado.Text = "q4";
                                     break;
 
                                 case "Z":
+                                    dataGridView1[cabezal, 1].Value = "c";
                                     cabezal--;
                                     estado.Text = "q4";
                                     break;
@@ -448,16 +469,19 @@ namespace proyecto_2_MT
                                     break;
 
                                 case "X":
+                                    dataGridView1[cabezal, 1].Value = "a";
                                     cabezal--;
                                     estado.Text = "q5";
                                     break;
 
                                 case "Y":
+                                    dataGridView1[cabezal, 1].Value = "b";
                                     cabezal--;
                                     estado.Text = "q5";
                                     break;
 
                                 case "Z":
+                                    dataGridView1[cabezal, 1].Value = "c";
                                     cabezal--;
                                     estado.Text = "q5";
                                     break;
@@ -484,16 +508,19 @@ namespace proyecto_2_MT
                                     break;
 
                                 case "X":
+                                    dataGridView1[cabezal, 1].Value = "a";
                                     cabezal--;
                                     estado.Text = "q6";
                                     break;
 
                                 case "Y":
+                                    dataGridView1[cabezal, 1].Value = "b";
                                     cabezal--;
                                     estado.Text = "q6";
                                     break;
 
                                 case "Z":
+                                    dataGridView1[cabezal, 1].Value = "c";
                                     cabezal--;
                                     estado.Text = "q6";
                                     break;
@@ -530,6 +557,7 @@ namespace proyecto_2_MT
 
             button2.Visible = true;
             button2.Enabled = true;
+            comboBox1.Enabled = true;
         }
 
         private void escribir2_Click(object sender, EventArgs e)
@@ -566,6 +594,7 @@ namespace proyecto_2_MT
 
         private void play2_Click(object sender, EventArgs e)
         {
+            comboBox1.Enabled = false;
             play2.Visible = false;
             play2.Enabled = false;
             iniciar2.Visible = false;
@@ -576,7 +605,7 @@ namespace proyecto_2_MT
             while (active)
             {
                 this.Refresh();
-                System.Threading.Thread.Sleep(800);
+                System.Threading.Thread.Sleep(tiempo);
                 if (cabezal >= 0)
                 {
                     switch (estado2.Text)
@@ -1007,6 +1036,7 @@ namespace proyecto_2_MT
 
             nuevacinta2.Visible = true;
             nuevacinta2.Enabled = true;
+            comboBox1.Enabled = true;
         }
 
         private void nuevacinta2_Click(object sender, EventArgs e)
@@ -1056,6 +1086,7 @@ namespace proyecto_2_MT
 
         private void play3_Click(object sender, EventArgs e)
         {
+            comboBox1.Enabled = false;
             play3.Visible = false;
             play3.Enabled = false;
             iniciar3.Visible = false;
@@ -1066,7 +1097,7 @@ namespace proyecto_2_MT
             while (active)
             {
                 this.Refresh();
-                System.Threading.Thread.Sleep(800);
+                System.Threading.Thread.Sleep(tiempo);
                 if (cabezal >= 0)
                 {
                     switch (estado3.Text)
@@ -1306,9 +1337,9 @@ namespace proyecto_2_MT
             {
                 MessageBox.Show("cadena no aceptada. LA MÁQUINA SE DETUVO");
             }
-
             nuevacinta3.Visible = true;
             nuevacinta3.Enabled = true;
+            comboBox1.Enabled = true;
         }
 
         private void nuevacinta3_Click(object sender, EventArgs e)
@@ -1354,6 +1385,7 @@ namespace proyecto_2_MT
 
         private void play4_Click(object sender, EventArgs e)
         {
+            comboBox1.Enabled = false;
             play4.Visible = false;
             play4.Enabled = false;
             iniciar4.Visible = false;
@@ -1364,7 +1396,7 @@ namespace proyecto_2_MT
             while (active)
             {
                 this.Refresh();
-                System.Threading.Thread.Sleep(800);
+                System.Threading.Thread.Sleep(tiempo);
                 if (cabezal >= 0)
                 {
                     switch (estado4.Text)
@@ -1601,6 +1633,7 @@ namespace proyecto_2_MT
 
             nuevacinta4.Visible = true;
             nuevacinta4.Enabled = true;
+            comboBox1.Enabled = true;
         }
 
         private void nuevacinta4_Click(object sender, EventArgs e)
@@ -1646,6 +1679,7 @@ namespace proyecto_2_MT
 
         private void play5_Click(object sender, EventArgs e)
         {
+            comboBox1.Enabled = false;
             play5.Visible = false;
             play5.Enabled = false;
             iniciar5.Visible = false;
@@ -1656,7 +1690,7 @@ namespace proyecto_2_MT
             while (active)
             {
                 this.Refresh();
-                System.Threading.Thread.Sleep(800);
+                System.Threading.Thread.Sleep(tiempo);
                 if (cabezal >= 0)
                 {
                     switch (estado5.Text)
@@ -1922,6 +1956,7 @@ namespace proyecto_2_MT
 
             nuevacinta5.Visible = true;
             nuevacinta5.Enabled = true;
+            comboBox1.Enabled = true;
         }
 
         private void nuevacinta5_Click(object sender, EventArgs e)
@@ -1935,6 +1970,36 @@ namespace proyecto_2_MT
             dataGridView5.Rows.Clear();
             dataGridView5.Columns.Clear();
             textBox5.Text = "";
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (comboBox1.Text == "0,05 seg")
+            {
+                tiempo = 50;
+            }
+            else if (comboBox1.Text == "0,2 seg")
+            {
+                tiempo = 200;
+            }
+            else if (comboBox1.Text == "0,5 seg")
+            {
+                tiempo = 500;
+            }
+            else if (comboBox1.Text == "0,8 seg")
+            {
+                tiempo = 800;
+            }
+            else if (comboBox1.Text == "1,0 seg")
+            {
+                tiempo = 1000;
+            }
+            else if (comboBox1.Text == "1,5 seg")
+            {
+                tiempo = 1500;
+            }
+            comboBox1.SelectedItem = null;
+            escribir2.Focus();
         }
     }
 }
