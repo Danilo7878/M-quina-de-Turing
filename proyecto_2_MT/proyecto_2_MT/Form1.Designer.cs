@@ -110,6 +110,7 @@
             this.tabControl1.Controls.Add(this.tabPage3);
             this.tabControl1.Controls.Add(this.tabPage4);
             this.tabControl1.Controls.Add(this.tabPage5);
+            this.tabControl1.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabControl1.Location = new System.Drawing.Point(12, 42);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
@@ -128,10 +129,10 @@
             this.tabPage1.Controls.Add(this.button1);
             this.tabPage1.Controls.Add(this.dataGridView1);
             this.tabPage1.Controls.Add(this.textBox1);
-            this.tabPage1.Location = new System.Drawing.Point(4, 22);
+            this.tabPage1.Location = new System.Drawing.Point(4, 24);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(544, 311);
+            this.tabPage1.Size = new System.Drawing.Size(544, 309);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Palíndromo";
             this.tabPage1.Click += new System.EventHandler(this.tabPage1_Click);
@@ -141,7 +142,7 @@
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(402, 59);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(42, 13);
+            this.label4.Size = new System.Drawing.Size(44, 15);
             this.label4.TabIndex = 8;
             this.label4.Text = "iniciar";
             this.label4.Visible = false;
@@ -173,7 +174,7 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(32, 236);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(79, 13);
+            this.label2.Size = new System.Drawing.Size(81, 15);
             this.label2.TabIndex = 5;
             this.label2.Text = "estado actual:";
             this.label2.Visible = false;
@@ -183,7 +184,7 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(18, 58);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(229, 13);
+            this.label1.Size = new System.Drawing.Size(239, 15);
             this.label1.TabIndex = 4;
             this.label1.Text = "Escriba la cadena que ingresará en la cinta";
             // 
@@ -191,6 +192,7 @@
             // 
             this.button2.BackColor = System.Drawing.Color.Tomato;
             this.button2.Enabled = false;
+            this.button2.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.SystemColors.Control;
             this.button2.Location = new System.Drawing.Point(198, 248);
             this.button2.Name = "button2";
@@ -236,7 +238,7 @@
             // 
             this.textBox1.Location = new System.Drawing.Point(54, 28);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(162, 20);
+            this.textBox1.Size = new System.Drawing.Size(162, 22);
             this.textBox1.TabIndex = 0;
             // 
             // tabPage2
@@ -263,7 +265,7 @@
             this.iniciar2.AutoSize = true;
             this.iniciar2.Location = new System.Drawing.Point(409, 63);
             this.iniciar2.Name = "iniciar2";
-            this.iniciar2.Size = new System.Drawing.Size(42, 13);
+            this.iniciar2.Size = new System.Drawing.Size(44, 15);
             this.iniciar2.TabIndex = 17;
             this.iniciar2.Text = "iniciar";
             this.iniciar2.Visible = false;
@@ -295,7 +297,7 @@
             this.estadoact2.AutoSize = true;
             this.estadoact2.Location = new System.Drawing.Point(39, 240);
             this.estadoact2.Name = "estadoact2";
-            this.estadoact2.Size = new System.Drawing.Size(79, 13);
+            this.estadoact2.Size = new System.Drawing.Size(81, 15);
             this.estadoact2.TabIndex = 14;
             this.estadoact2.Text = "estado actual:";
             this.estadoact2.Visible = false;
@@ -305,7 +307,7 @@
             this.label7.AutoSize = true;
             this.label7.Location = new System.Drawing.Point(25, 62);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(229, 13);
+            this.label7.Size = new System.Drawing.Size(239, 15);
             this.label7.TabIndex = 13;
             this.label7.Text = "Escriba la cadena que ingresará en la cinta";
             // 
@@ -358,7 +360,7 @@
             // 
             this.textBox2.Location = new System.Drawing.Point(61, 32);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(162, 20);
+            this.textBox2.Size = new System.Drawing.Size(162, 22);
             this.textBox2.TabIndex = 9;
             // 
             // tabPage3
@@ -386,7 +388,7 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(24, 72);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(139, 13);
+            this.label3.Size = new System.Drawing.Size(148, 15);
             this.label3.TabIndex = 18;
             this.label3.Text = "caracter del sistema:  \"1\"";
             // 
@@ -395,7 +397,7 @@
             this.iniciar3.AutoSize = true;
             this.iniciar3.Location = new System.Drawing.Point(408, 60);
             this.iniciar3.Name = "iniciar3";
-            this.iniciar3.Size = new System.Drawing.Size(42, 13);
+            this.iniciar3.Size = new System.Drawing.Size(44, 15);
             this.iniciar3.TabIndex = 17;
             this.iniciar3.Text = "iniciar";
             this.iniciar3.Visible = false;
@@ -427,7 +429,7 @@
             this.estadoactual3.AutoSize = true;
             this.estadoactual3.Location = new System.Drawing.Point(38, 237);
             this.estadoactual3.Name = "estadoactual3";
-            this.estadoactual3.Size = new System.Drawing.Size(79, 13);
+            this.estadoactual3.Size = new System.Drawing.Size(81, 15);
             this.estadoactual3.TabIndex = 14;
             this.estadoactual3.Text = "estado actual:";
             this.estadoactual3.Visible = false;
@@ -437,7 +439,7 @@
             this.label11.AutoSize = true;
             this.label11.Location = new System.Drawing.Point(24, 59);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(229, 13);
+            this.label11.Size = new System.Drawing.Size(239, 15);
             this.label11.TabIndex = 13;
             this.label11.Text = "Escriba la cadena que ingresará en la cinta";
             // 
@@ -490,7 +492,7 @@
             // 
             this.textBox3.Location = new System.Drawing.Point(60, 29);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(162, 20);
+            this.textBox3.Size = new System.Drawing.Size(162, 22);
             this.textBox3.TabIndex = 9;
             // 
             // tabPage4
@@ -518,7 +520,7 @@
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(24, 72);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(139, 13);
+            this.label5.Size = new System.Drawing.Size(148, 15);
             this.label5.TabIndex = 19;
             this.label5.Text = "caracter del sistema:  \"1\"";
             // 
@@ -527,7 +529,7 @@
             this.iniciar4.AutoSize = true;
             this.iniciar4.Location = new System.Drawing.Point(408, 60);
             this.iniciar4.Name = "iniciar4";
-            this.iniciar4.Size = new System.Drawing.Size(42, 13);
+            this.iniciar4.Size = new System.Drawing.Size(44, 15);
             this.iniciar4.TabIndex = 17;
             this.iniciar4.Text = "iniciar";
             this.iniciar4.Visible = false;
@@ -559,7 +561,7 @@
             this.estadoactual4.AutoSize = true;
             this.estadoactual4.Location = new System.Drawing.Point(38, 237);
             this.estadoactual4.Name = "estadoactual4";
-            this.estadoactual4.Size = new System.Drawing.Size(79, 13);
+            this.estadoactual4.Size = new System.Drawing.Size(81, 15);
             this.estadoactual4.TabIndex = 14;
             this.estadoactual4.Text = "estado actual:";
             this.estadoactual4.Visible = false;
@@ -569,7 +571,7 @@
             this.label15.AutoSize = true;
             this.label15.Location = new System.Drawing.Point(24, 59);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(229, 13);
+            this.label15.Size = new System.Drawing.Size(239, 15);
             this.label15.TabIndex = 13;
             this.label15.Text = "Escriba la cadena que ingresará en la cinta";
             // 
@@ -622,7 +624,7 @@
             // 
             this.textBox4.Location = new System.Drawing.Point(60, 29);
             this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(162, 20);
+            this.textBox4.Size = new System.Drawing.Size(162, 22);
             this.textBox4.TabIndex = 9;
             // 
             // tabPage5
@@ -650,7 +652,7 @@
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(24, 72);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(139, 13);
+            this.label6.Size = new System.Drawing.Size(148, 15);
             this.label6.TabIndex = 19;
             this.label6.Text = "caracter del sistema:  \"1\"";
             // 
@@ -659,7 +661,7 @@
             this.iniciar5.AutoSize = true;
             this.iniciar5.Location = new System.Drawing.Point(408, 60);
             this.iniciar5.Name = "iniciar5";
-            this.iniciar5.Size = new System.Drawing.Size(42, 13);
+            this.iniciar5.Size = new System.Drawing.Size(44, 15);
             this.iniciar5.TabIndex = 17;
             this.iniciar5.Text = "iniciar";
             this.iniciar5.Visible = false;
@@ -691,7 +693,7 @@
             this.estadoactual5.AutoSize = true;
             this.estadoactual5.Location = new System.Drawing.Point(38, 237);
             this.estadoactual5.Name = "estadoactual5";
-            this.estadoactual5.Size = new System.Drawing.Size(79, 13);
+            this.estadoactual5.Size = new System.Drawing.Size(81, 15);
             this.estadoactual5.TabIndex = 14;
             this.estadoactual5.Text = "estado actual:";
             this.estadoactual5.Visible = false;
@@ -701,7 +703,7 @@
             this.label19.AutoSize = true;
             this.label19.Location = new System.Drawing.Point(24, 59);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(229, 13);
+            this.label19.Size = new System.Drawing.Size(239, 15);
             this.label19.TabIndex = 13;
             this.label19.Text = "Escriba la cadena que ingresará en la cinta";
             // 
@@ -754,7 +756,7 @@
             // 
             this.textBox5.Location = new System.Drawing.Point(60, 29);
             this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(162, 20);
+            this.textBox5.Size = new System.Drawing.Size(162, 22);
             this.textBox5.TabIndex = 9;
             // 
             // comboBox1
@@ -776,10 +778,11 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.ForeColor = System.Drawing.SystemColors.Control;
-            this.label8.Location = new System.Drawing.Point(177, 426);
+            this.label8.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label8.Location = new System.Drawing.Point(150, 425);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(198, 13);
+            this.label8.Size = new System.Drawing.Size(247, 17);
             this.label8.TabIndex = 2;
             this.label8.Text = "cambiar velocidad entre transiciones";
             // 
@@ -787,14 +790,15 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(573, 451);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.tabControl1);
             this.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
-            this.Text = "Máquina de Turing";
+            this.Text = "Máquinas de Turing";
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
